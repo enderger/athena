@@ -1,0 +1,13 @@
+[package]
+name = "athena"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+
+[dependencies]
+lazy_static = "1.4.0"
+thiserror = "1.0.30"
+semver = "1.0.4"
+serde = { version = "1.0.130", features = ["derive"] }
+toml = "0.5.8"

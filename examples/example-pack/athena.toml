@@ -1,0 +1,23 @@
+[modpack]
+name = "Example Modpack"
+version = "0.1.0"
+
+[game]
+minecraft = "1.17.1"
+fabric-loader = "0.9.0"
+
+[sources.modrinth]
+type = "labrinth.v1"
+url = "https://api.modrinth.com/"
+
+[[files]]
+path = "mods/sodium.jar"
+# A set of sources to poll can also be provided
+sources = ["modrinth"]
+
+[files.version]
+# The version can be selected as the latest version in a given channel
+# It also can be manually provided, either as SemVer or an exact string
+# Finally, if needed a direct download link and hash can be provided
+type = "latest"
+channel = "release"
